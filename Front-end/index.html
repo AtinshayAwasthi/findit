@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindIt: Lost and Found</title>
+  <meta name="description"
+    content="FindIt - A modern platform to report, search, and connect for lost and found items.">
+  <meta property="og:image" content="WhatsApp_Image_2025-01-14_at_14.02.12_e3c10587-removebg-preview.png">
+  <meta name="keywords" content="FindIt, Lost and Found, Report Lost Items, Report Found Items">
+  <meta property="og:description"
+    content="FindIt bridges the gap between those who lose their belongings and those who find them.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Added font link -->
+  <link rel="icon" type="image/x-icon" href="logo-removebg-preview.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+  <!-- Navigation Bar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center gap-2">
+        <img src="logo-removebg-preview.png" alt="FindIt Logo" class="w-12 h-12 object-contain">
+        <h1 class="text-xl font-bold text-gray-800">FindIt</h1>
+      </div>
+      <div class="button-container">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <button class="custom-button" aria-label="Contact Us">Contact Us</button> <!-- Added aria-label -->
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero h-screen text-white">
+    <div class="hero-overlay"></div>
+    <div class="container mx-auto relative z-10 text-center flex flex-col justify-center items-center h-full">
+      <h1 class="text-5xl font-extrabold mb-4">Find Your Belongings with <span class="text-orange-500">FindIt...</span>
+      </h1>
+      <p class="text-xl mb-6">A modern platform to report, search, and connect for lost and found items.</p>
+
+      <!-- Search Feature -->
+      <form class="flex justify-center items-center gap-4 mb-6 w-full max-w-2xl">
+        <label for="search-item" class="sr-only">Search for a lost item</label>
+        <input type="text" id="search-item" placeholder="Search for a lost item..."
+          class="w-full px-4 py-3 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-400">
+        <button type="submit"
+          class="px-5 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600">Search</button>
+      </form>
+
+      <div class="flex justify-center space-x-4">
+        <a href="report-lost.html"
+          class="px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600">Report Lost Item</a>
+        <a href="report-found.html"
+          class="px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600">Report Found Item</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">About FindIt</h2>
+      <p class="text-gray-600 text-lg">FindIt bridges the gap between those who lose their belongings and those who find
+        them.
+        Our platform simplifies reporting and searching for lost items, making the process quick and hassle-free. By
+        encouraging community participation, FindIt fosters collaboration and trust, helping people reconnect with their
+        valuables efficiently and effectively.</p>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <i class="fas fa-pen-alt step-icon"></i>
+          <h3>1. Report</h3>
+          <p>Provide details about the lost or found item.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-search step-icon"></i>
+          <h3>2. Search</h3>
+          <p>Search through listed items to find what you need.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-handshake step-icon"></i>
+          <h3>3. Connect</h3>
+          <p>Contact the person to arrange for retrieval or return.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FindIt Platform. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Visit our Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
